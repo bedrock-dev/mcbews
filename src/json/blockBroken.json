@@ -1,0 +1,52 @@
+{
+  "body": {
+    "eventName": "BlockBroken",
+    "measurements": {
+      "Count": 1,
+      "RecordCnt": 1,
+      "SeqMax": 83,
+      "SeqMin": 83
+    },
+    "properties": {
+      "AccountType": 1,
+      "ActiveSessionID": "0f4a4c04-6774-4844-867a-3cec82f1ff90",
+      "AppSessionID": "21e8ff1a-586b-416c-8dab-62fb05c96659",
+      "AuxType": 0,
+      "Biome": 2,
+      "Block": "sand",
+      "Build": "1.13.1",
+      "BuildPlat": 7,
+      "Cheevos": false,
+      "ClientId": "0ceeb3a3-f96c-34b0-895f-b0d4ca7b129a",
+      "CurrentInput": 1,
+      "DestructionMethod": 0,
+      "DeviceSessionId": "21e8ff1a-586b-416c-8dab-62fb05c96659",
+      "Dim": 0,
+      "GlobalMultiplayerCorrelationId": "4d55e4d4-7b36-4e67-9b99-e6b1bdda0b0b",
+      "Mode": 1,
+      "MultiplayerCorrelationId": "943dd7d7-6f8d-fc7e-08b0-e2f3a254b857",
+      "Namespace": "minecraft",
+      "NetworkType": 0,
+      "Plat": "Win 10.0.18362.1",
+      "PlayerGameMode": 1,
+      "SchemaCommitHash": "19b6ec0744c3c83a00ecbd840f48cb080c7bc64d",
+      "ServerId": "raknet:9620722836705146730",
+      "ToolItemType": 0,
+      "Treatments": "mc-perf-plat-12-20:mc-perf-plat-1-20:mc-perf-plat-2-20:mc-perf-plat-4-20:mc-perf-plat-7-20:mc-perf-plat-13-20:mc-perf-plat-11-1:mc-rp-frozenbuttonandpanel:mc-rp-playfab",
+      "Type": 12,
+      "UserId": "2535451099196973",
+      "Variant": 0,
+      "WorldFeature": 0,
+      "WorldSessionId": "184bbf5b-2215-4557-a3fe-6454b67d6c71",
+      "editionType": "win10",
+      "isTrial": 0,
+      "locale": "zh_CN",
+      "vrMode": false
+    }
+  },
+  "header": {
+    "messagePurpose": "event",
+    "requestId": "00000000-0000-0000-0000-000000000000",
+    "version": 1
+  }
+}

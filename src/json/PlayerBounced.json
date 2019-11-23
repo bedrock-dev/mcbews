@@ -1,0 +1,50 @@
+{
+  "body": {
+    "eventName": "PlayerBounced",
+    "measurements": {
+      "BounceHeight": 2,
+      "Count": 1,
+      "RecordCnt": 1,
+      "SeqMax": 1232,
+      "SeqMin": 1232
+    },
+    "properties": {
+      "AccountType": 1,
+      "ActiveSessionID": "a9f8087b-2e3d-495c-b3c3-aef515b7e19a",
+      "AppSessionID": "43408684-6cb0-4896-b89d-66a2a1e48a73",
+      "AuxType": 0,
+      "Biome": 1,
+      "Block": "bed",
+      "Build": "1.13.1",
+      "BuildPlat": 7,
+      "Cheevos": false,
+      "ClientId": "0ceeb3a3-f96c-34b0-895f-b0d4ca7b129a",
+      "CurrentInput": 1,
+      "DeviceSessionId": "43408684-6cb0-4896-b89d-66a2a1e48a73",
+      "Dim": 0,
+      "GlobalMultiplayerCorrelationId": "0694aabd-ddde-466d-ae99-1f88faf1580a",
+      "Mode": 1,
+      "MultiplayerCorrelationId": "ab4e37fe-2836-18a0-6d21-a85f781f8e70",
+      "Namespace": "minecraft",
+      "NetworkType": 0,
+      "Plat": "Win 10.0.18362.1",
+      "PlayerGameMode": 1,
+      "SchemaCommitHash": "19b6ec0744c3c83a00ecbd840f48cb080c7bc64d",
+      "ServerId": "raknet:11376205654463177128",
+      "Treatments": "mc-perf-plat-12-20:mc-perf-plat-1-20:mc-perf-plat-2-20:mc-perf-plat-4-20:mc-perf-plat-7-20:mc-perf-plat-13-20:mc-perf-plat-11-1:mc-rp-frozenbuttonandpanel:mc-rp-playfab",
+      "Type": 26,
+      "UserId": "2535451099196973",
+      "WorldFeature": 0,
+      "WorldSessionId": "f7d8ca20-4be0-4d01-aa83-3c2c64dabc88",
+      "editionType": "win10",
+      "isTrial": 0,
+      "locale": "zh_CN",
+      "vrMode": false
+    }
+  },
+  "header": {
+    "messagePurpose": "event",
+    "requestId": "00000000-0000-0000-0000-000000000000",
+    "version": 1
+  }
+}
