@@ -22,14 +22,14 @@ Minecraft BE版有一个`/connect`指令用来链接`WebSocket`服务器（以�
         "origin": {
             "type": "player"
         },
-        "commandLine": "say Hello", //具体命令
+        "commandLine": "say Hello",
         "version": 1
     },
     "header": {
-        "requestId": "00000000-0000-0000-0000-000000000000", //随机uuid
-        "messagePurpose": "commandRequest", //固定值
-        "version": 1, //固定值
-        "messageType": "commandRequest" //固定值
+        "requestId": "00000000-0000-0000-0000-000000000000", 
+        "messagePurpose": "commandRequest", 
+        "version": 1, 
+        "messageType": "commandRequest"
     }
 }
 ```
@@ -39,14 +39,14 @@ Minecraft BE版有一个`/connect`指令用来链接`WebSocket`服务器（以�
 ```json
 {
     "body": {
-        "statusCode": 0, // 指令是否成功执行
+        "statusCode": 0,
         "其他信息":{
-    	//额外信息依据指令的执行情况而不同
+    	
         }
     }
     },
     "header": {
-        "messagePurpose": "commandResponse", // Notice there is no messageType
+        "messagePurpose": "commandResponse", 
         "requestId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "version": 1
     }
@@ -62,11 +62,11 @@ Minecraft BE版有一个`/connect`指令用来链接`WebSocket`服务器（以�
 ```json
 {
 	"body": {
-		"eventName": "PlayerMessage" //事件名字
+		"eventName": "PlayerMessage"
 	},
 	"header": {
-		"requestId": "00000000-0000-0000-0000-000000000000", //uuid
-		"messagePurpose": "subscribe", //订阅
+		"requestId": "00000000-0000-0000-0000-000000000000",
+		"messagePurpose": "subscribe", 
 		"version": 1,
 		"messageType": "commandRequest"
 	}
@@ -79,11 +79,11 @@ Minecraft BE版有一个`/connect`指令用来链接`WebSocket`服务器（以�
 
 {
     "body": {
-        "eventName": "NameOfEvent" // Event to unsubscribe to
+        "eventName": "NameOfEvent"
     },
     "header": {
         "requestId": "xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxxx",
-        "messagePurpose": "unsubscribe", // Notice that messagePurpose is different from messageType
+        "messagePurpose": "unsubscribe", 
         "version": 1,
         "messageType": "commandRequest"
     }
@@ -104,7 +104,7 @@ Minecraft BE版有一个`/connect`指令用来链接`WebSocket`服务器（以�
             
         },
         "properties": {
-        /*信息*/
+   
         }
     },
 	"header": {
