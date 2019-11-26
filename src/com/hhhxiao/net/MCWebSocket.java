@@ -9,6 +9,7 @@ import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 import org.java_websocket.server.WebSocketServer;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
@@ -40,6 +41,13 @@ public class MCWebSocket extends WebSocketServer {
 
     public void onMessage(WebSocket webSocket, String s) {
         Logger.d("new msg: "+s);
+        for (Listener listener:listeners){
+            try {
+                listener.onEvent(clients.get(webSocket),s);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void onError(WebSocket webSocket, Exception e) {

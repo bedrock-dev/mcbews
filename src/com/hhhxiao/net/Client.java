@@ -28,5 +28,7 @@ public class Client {
         send(message);
     }
 
-
+    public WebSocket getWebSocket() {
+        return webSocket;
+    }
 }
