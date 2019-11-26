@@ -1,10 +1,9 @@
-package net;
+package com.hhhxiao.net;
 
-import debug.Logger;
-import mesage.EventType;
-import mesage.Message;
-import mesage.ReqMsgBuilder;
-import mesage.ReqMsgPurpose;
+import com.hhhxiao.debug.Logger;
+import com.hhhxiao.Request.body.BodyException;
+import com.hhhxiao.resp.EventResponse;
+import com.hhhxiao.resp.Response;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 import org.java_websocket.server.WebSocketServer;
@@ -43,7 +42,7 @@ public class MCWebSocket extends WebSocketServer {
         Logger.d("new msg: "+s);
         for (Listener listener:listeners){
             try {
-                listener.onEvent(clients.get(webSocket),s);
+                listener.onEvent(clients.get(webSocket),new Response(s));
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -1,4 +1,4 @@
-package mesage.body;
+package com.hhhxiao.Request.body;
 
 public class EventRequestBody extends  Body {
     private String eventName;

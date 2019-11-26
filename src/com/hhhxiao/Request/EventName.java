@@ -1,6 +1,6 @@
-package com.hhhxiao.mesage;
+package com.hhhxiao.Request;
 
-public  class EventType {
+public  class EventName {
     public static final String BLOCK_BROKEN = "BlockBroken";
     public static final String BLOCK_PLACED = "BlockPlaced";
     public static final String BOSS_KILLED = "BossKilled";
@@ -25,6 +25,6 @@ public  class EventType {
     public static final String PORTAL_USED = "PortalUsed";
     public static final String POTION_BREWED = "PotionBrewed";
     public static final String SCREEN_CHANGED = "ScreenChanged";
-    
+    public static final String VEHICLE_EXITED = "VehicleExited";
 
 }

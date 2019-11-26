@@ -1,8 +1,7 @@
-package mesage;
+package com.hhhxiao.Request.body;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
-import java.security.PublicKey;
 import java.util.UUID;
 
 public class Header {

@@ -1,18 +1,17 @@
-package net;
+package com.hhhxiao.net;
 
-import mesage.Message;
+import com.hhhxiao.Request.Request;
+import com.hhhxiao.resp.EventResponse;
+import com.hhhxiao.resp.Response;
 
 import java.io.IOException;
 
 public class MCListener implements  Listener {
-
-    public void onResponse(Client client, Message request, Message response) {
-
-    }
-
-    public void onEvent(Client client, String s) throws IOException {
+    @Override
+    public void onEvent(Client client, Response response) throws IOException {
 
     }
+
 
     public void onConnected(Client client) {
 

@@ -1,0 +1,11 @@
+{
+  "body": {
+    "message": "123",
+    "statusCode": 0
+  },
+  "header": {
+    "messagePurpose": "commandResponse",
+    "requestId": "aedd735f-ff0d-4ef6-bb32-03741d8bf05d",
+    "version": 1
+  }
+}

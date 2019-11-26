@@ -1,8 +1,8 @@
-package net;
+package com.hhhxiao.net;
 
-import mesage.Message;
-import mesage.ReqMsgBuilder;
-import mesage.ReqMsgPurpose;
+import com.hhhxiao.Request.Request;
+import com.hhhxiao.Request.RequestBuilder;
+import com.hhhxiao.Request.RequestPurpose;
 import org.java_websocket.WebSocket;
 
 public class Client {
@@ -12,20 +12,20 @@ public class Client {
         webSocket = w;
     }
 
-    public void  send(Message message){
-        webSocket.send(message.toJSONString());
+    public void  send(Request request){
+        webSocket.send(request.toJSONString());
     }
 
     public void sendCommand(String command){
-        Message message = new ReqMsgBuilder(ReqMsgPurpose.COMMAND_REQUEST)
+        Request request = new RequestBuilder(RequestPurpose.COMMAND_REQUEST)
                 .commandBody(command).build();
-        send(message);
+        send(request);
     }
 
     public void subscribe(String event){
-        Message message = new ReqMsgBuilder(ReqMsgPurpose.SUBSCRIBE)
+        Request request = new RequestBuilder(RequestPurpose.SUBSCRIBE)
                 .eventBody(event).build();
-        send(message);
+        send(request);
     }
 
     public WebSocket getWebSocket() {

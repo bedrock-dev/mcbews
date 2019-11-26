@@ -1,7 +1,6 @@
-package mesage.body;
+package com.hhhxiao.Request.body;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.sun.org.apache.xpath.internal.operations.Or;
 
 public class CommandRequestBody extends Body {
     private static class Origin {

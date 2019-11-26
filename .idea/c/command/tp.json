@@ -1,0 +1,19 @@
+{
+  "body": {
+    "destination": {
+      "x": -6.758185386657715,
+      "y": 79.0,
+      "z": 76.12599182128906
+    },
+    "statusCode": 0,
+    "statusMessage": "Teleported hhhxiao to -6.76, 79.00, 76.13",
+    "victim": [
+      "hhhxiao"
+    ]
+  },
+  "header": {
+    "messagePurpose": "commandResponse",
+    "requestId": "1bd12e73-2c7e-4ce0-93cd-167d64655633",
+    "version": 1
+  }
+}

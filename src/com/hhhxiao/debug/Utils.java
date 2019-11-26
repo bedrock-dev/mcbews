@@ -1,4 +1,4 @@
-package debug;
+package com.hhhxiao.debug;
 
 import java.io.FileWriter;
 import java.io.IOException;

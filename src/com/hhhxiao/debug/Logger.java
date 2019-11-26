@@ -1,6 +1,4 @@
-package debug;
-
-import jdk.nashorn.internal.runtime.regexp.joni.WarnCallback;
+package com.hhhxiao.debug;
 
 public class Logger {
     public static final int DEBUG = 0;
@@ -15,22 +13,22 @@ public class Logger {
     }
 
     public  static void d(Object o){
-        if(logLevel >= DEBUG)
+        if(logLevel <= DEBUG)
             System.out.println("DEBUG: " + o.toString());
     }
 
     public static void i(Object o){
-        if(logLevel >= INFO)
+        if(logLevel <= INFO)
             System.out.println("INFO: " + o.toString());
     }
 
     public  static void w(Object o){
-        if(logLevel >= WARNING)
+        if(logLevel <= WARNING)
             System.out.println("WARNING: " + o.toString());
     }
 
     public static void e(Object o){
-        if(logLevel >= ERROR)
+        if(logLevel <= ERROR)
             System.out.println("ERROR: " + o.toString());
     }
 
