@@ -8,28 +8,28 @@ public class Logger {
 
     private static int logLevel = Logger.DEBUG;
 
-    public static void  setLogLevel(int level){
+    public static void setLogLevel(int level) {
         logLevel = level;
     }
 
-    public  static void d(Object o){
-        if(logLevel <= DEBUG)
+    public static void d(Object o) {
+        if (logLevel <= DEBUG)
             System.out.println("DEBUG: " + o.toString());
     }
 
-    public static void i(Object o){
-        if(logLevel <= INFO)
+    public static void i(Object o) {
+        if (logLevel <= INFO)
             System.out.println("INFO: " + o.toString());
     }
 
-    public  static void w(Object o){
-        if(logLevel <= WARNING)
+    public static void w(Object o) {
+        if (logLevel <= WARNING)
             System.out.println("WARNING: " + o.toString());
     }
 
-    public static void e(Object o){
-        if(logLevel <= ERROR)
-            System.out.println("ERROR: " + o.toString());
+    public static void e(Object o) {
+        if (logLevel <= ERROR) {
+            System.err.println("ERROR: " + o.toString());
+        }
     }
-
 }

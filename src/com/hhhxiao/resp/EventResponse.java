@@ -5,24 +5,21 @@ import com.hhhxiao.Request.body.BodyException;
 
 /**
  * 用于解析订阅事件返回的信息的接口
+ *
  * @author AgNO3
  */
-public class EventResponse extends Response {
+public class EventResponse {
     private final String eventName;
     private final JSONObject properties;
     private final JSONObject measurements;
 
-    public EventResponse(String s) throws BodyException {
-        super(s);
-        JSONObject body = JSONObject.parseObject(s).getJSONObject("body");
-        if(!body.containsKey("eventName"))
-            throw new BodyException("Not a EventResponse");
-         this.eventName = body.getString("eventName");
-         this.properties = body.getJSONObject("properties");
-         this.measurements = body.getJSONObject("properties");
+    public EventResponse(JSONObject body) {
+        this.eventName = body.getString("eventName");
+        this.properties = body.getJSONObject("properties");
+        this.measurements = body.getJSONObject("properties");
     }
 
-    public String getEventName(){
+    public String getEventName() {
         return eventName;
     }
 
@@ -33,6 +30,7 @@ public class EventResponse extends Response {
     public Object getProperties(String key) {
         return properties.get(key);
     }
+
     //所有消息都通用的方法
     public int getBiome() {
         return properties.getIntValue("Biome");
@@ -64,7 +62,7 @@ public class EventResponse extends Response {
         return properties.getString("local");
     }
 
-    public int getDim(){
+    public int getDim() {
         return properties.getIntValue("Dim");
     }
 
@@ -86,11 +84,9 @@ public class EventResponse extends Response {
     /**
      * @return 杀掉的boss的实体id
      */
-    public int getBossType(){
+    public int getBossType() {
         return properties.getInteger("BossType");
     }
-
-
 
 
     //PlayerMessage
@@ -107,21 +103,21 @@ public class EventResponse extends Response {
     /**
      * @return 使用炼药锅时候的level??
      */
-    public int getCauldronLevel(){
+    public int getCauldronLevel() {
         return properties.getInteger("CauldronLevel");
     }
 
     /**
      * @return 炼药锅相关，猜测是染色
      */
-    public int getCauldronDyeColor(){
+    public int getCauldronDyeColor() {
         return properties.getInteger("DyeColor");
     }
 
     /**
      * @return 炼药锅相关，猜测是和炼药锅交互的物品的
      */
-    public String getCauldronItemId(){
+    public String getCauldronItemId() {
         return properties.getString("ItemUsedId");
     }
     //CraftingSessionCompleted
@@ -129,7 +125,7 @@ public class EventResponse extends Response {
     /**
      * @return 关闭合成页面的时候是否使用合成台
      */
-    public boolean isUsedCraftingTable(){
+    public boolean isUsedCraftingTable() {
         return properties.getBoolean("UsedCraftingTable");
     }
 
@@ -137,45 +133,45 @@ public class EventResponse extends Response {
 
     /**
      * @return 玩家使用/summon指令生成的生物的实体id | 玩家杀死的生物的id
-     *  | 杀死玩家的生物id
+     * | 杀死玩家的生物id
      */
-    public int getMobType(){
+    public int getMobType() {
         return properties.getInteger("MobType");
     }
 
     /**
      * @return 捡到的物品的名字 | 合成的物品的名字 |掉落的物品的名字
-     *          从熔炉中取出的物品的名字 | 使用物品时候的物品名字
+     * 从熔炉中取出的物品的名字 | 使用物品时候的物品名字
      */
-    public String getItemType(){
+    public String getItemType() {
         return properties.getString("Type");
     }
 
     /**
      * @return 玩家杀死的是否为怪物
      */
-    public boolean isMonster(){
+    public boolean isMonster() {
         return properties.getBoolean("IsMonster");
     }
 
     /**
      * @return 杀死生物的方式??
      */
-    public int getKillMethodType(){
+    public int getKillMethodType() {
         return properties.getInteger("KillMethodType");
     }
 
     /**
      * @return 杀死生物使用的武器
      */
-    public int getWeaponType(){
+    public int getWeaponType() {
         return properties.getInteger("WeaponType");
     }
 
     /**
      * @return 玩家死亡原因
      */
-    public int getDiedCause(){
+    public int getDiedCause() {
         return properties.getInteger("Cause");
     }
 
@@ -189,7 +185,7 @@ public class EventResponse extends Response {
     /**
      * @return 玩家传送的距离
      */
-    public double getMetersTravelled(){
+    public double getMetersTravelled() {
         return properties.getDoubleValue("MetersTravelled");
     }
 
@@ -197,28 +193,28 @@ public class EventResponse extends Response {
     /**
      * @return 玩家x轴坐标 仅PlayerTransform事件可用
      */
-    public double getX(){
+    public double getX() {
         return properties.getDouble("PosX");
     }
 
     /**
      * @return 玩家y轴坐标 仅PlayerTransform事件可用
      */
-    public double getY(){
+    public double getY() {
         return properties.getDoubleValue("PosY");
     }
 
     /**
      * @return 玩家z轴坐标 仅PlayerTransform事件可用
      */
-    public double getZ(){
+    public double getZ() {
         return properties.getDoubleValue("PosZ");
     }
 
     /**
      * @return 玩家使用传送门要去的维度
      */
-    public int getToDim(){
+    public int getToDim() {
         return properties.getIntValue("Dim");
     }
 
