@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="mcpews:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mcpews_jar</output-path>
+    <root id="root">
+      <element id="archive" name="mcpews.jar">
+        <element id="module-output" name="mcpews" />
+      </element>
+      <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.62" />
+      <element id="library" level="project" name="Maven: org.java-websocket:Java-WebSocket:1.3.0" />
+    </root>
+  </artifact>
+</component>

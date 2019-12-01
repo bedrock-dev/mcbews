@@ -1,0 +1,53 @@
+{
+  "body": {
+    "eventName": "PlayerTravelled",
+    "measurements": {
+      "Count": 1,
+      "MetersTravelled": 1.006290674209595,
+      "NewBiome": 0,
+      "PosAvgX": 7.600845336914063,
+      "PosAvgY": 77.65784454345703,
+      "PosAvgZ": 8.046626091003418,
+      "RecordCnt": 1,
+      "SeqMax": 152,
+      "SeqMin": 152
+    },
+    "properties": {
+      "AccountType": 1,
+      "ActiveSessionID": "f8355bb5-d25c-4617-963e-db91860f85dc",
+      "AppSessionID": "d95580e7-27b5-49bf-bc4c-591eb28e90cc",
+      "Biome": 3,
+      "Build": "1.13.1",
+      "BuildPlat": 7,
+      "Cheevos": false,
+      "ClientId": "0ceeb3a3-f96c-34b0-895f-b0d4ca7b129a",
+      "CurrentInput": 1,
+      "DeviceSessionId": "d95580e7-27b5-49bf-bc4c-591eb28e90cc",
+      "Dim": 0,
+      "GlobalMultiplayerCorrelationId": "f5623aad-6136-4682-9fbe-8425721a2593",
+      "HasRelevantBuff": false,
+      "MobType": 0,
+      "Mode": 1,
+      "MultiplayerCorrelationId": "3005ad50-cee0-6bb7-d9f4-85f6a6b9a971",
+      "NetworkType": 0,
+      "Plat": "Win 10.0.18362.1",
+      "PlayerGameMode": 1,
+      "SchemaCommitHash": "19b6ec0744c3c83a00ecbd840f48cb080c7bc64d",
+      "ServerId": "raknet:10248536003664838553",
+      "TravelMethodType": 5,
+      "Treatments": "mc-perf-plat-12-20:mc-perf-plat-1-20:mc-perf-plat-2-20:mc-perf-plat-4-20:mc-perf-plat-7-20:mc-perf-plat-13-20:mc-perf-plat-11-1:mc-rp-frozenbuttonandpanel:mc-rp-playfab",
+      "UserId": "2535451099196973",
+      "WorldFeature": 0,
+      "WorldSessionId": "156ca204-e8dc-44a2-88f6-f2e1ed51af6a",
+      "editionType": "win10",
+      "isTrial": 0,
+      "locale": "zh_CN",
+      "vrMode": false
+    }
+  },
+  "header": {
+    "messagePurpose": "event",
+    "requestId": "00000000-0000-0000-0000-000000000000",
+    "version": 1
+  }
+}

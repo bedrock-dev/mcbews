@@ -1,0 +1,50 @@
+{
+  "body": {
+    "eventName": "CauldronUsed",
+    "measurements": {
+      "Count": 1,
+      "RecordCnt": 1,
+      "SeqMax": 2548,
+      "SeqMin": 2548
+    },
+    "properties": {
+      "AccountType": 1,
+      "ActiveSessionID": "e844dd3b-1f9a-41ed-94e8-809fe5ebeb02",
+      "AppSessionID": "cae2c13d-2290-46de-8296-f6c9508f6239",
+      "Biome": 1,
+      "Build": "1.13.1",
+      "BuildPlat": 7,
+      "CauldronLevel": 0,
+      "Cheevos": false,
+      "ClientId": "0ceeb3a3-f96c-34b0-895f-b0d4ca7b129a",
+      "ContentsType": -1,
+      "CurrentInput": 1,
+      "DeviceSessionId": "cae2c13d-2290-46de-8296-f6c9508f6239",
+      "Dim": 0,
+      "DyeColor": 0,
+      "GlobalMultiplayerCorrelationId": "5ee7e0f4-c90b-4fb8-953c-06c252967475",
+      "ItemUsedAuxType": 8,
+      "ItemUsedId": 325,
+      "Mode": 0,
+      "MultiplayerCorrelationId": "764f85cd-4238-da4d-c32b-564c75e1b64a",
+      "NetworkType": 0,
+      "Plat": "Win 10.0.18362.1",
+      "PlayerGameMode": 1,
+      "SchemaCommitHash": "19b6ec0744c3c83a00ecbd840f48cb080c7bc64d",
+      "ServerId": "raknet:9283883434774176250",
+      "Treatments": "mc-perf-plat-12-20:mc-perf-plat-1-20:mc-perf-plat-2-20:mc-perf-plat-4-20:mc-perf-plat-7-20:mc-perf-plat-13-20:mc-perf-plat-11-1:mc-rp-frozenbuttonandpanel:mc-rp-playfab",
+      "UserId": "2535451099196973",
+      "WorldFeature": 0,
+      "WorldSessionId": "16766fa5-6d0e-4afc-9831-a422df246312",
+      "editionType": "win10",
+      "isTrial": 0,
+      "locale": "zh_CN",
+      "vrMode": false
+    }
+  },
+  "header": {
+    "messagePurpose": "event",
+    "requestId": "00000000-0000-0000-0000-000000000000",
+    "version": 1
+  }
+}

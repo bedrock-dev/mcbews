@@ -1,0 +1,46 @@
+{
+  "body": {
+    "eventName": "JukeboxUsed",
+    "measurements": {
+      "Count": 1,
+      "RecordCnt": 1,
+      "SeqMax": 1513,
+      "SeqMin": 1513
+    },
+    "properties": {
+      "AccountType": 1,
+      "ActiveSessionID": "79a6bd26-e0b4-4385-839e-185be79a875f",
+      "AppSessionID": "d5aa0631-644e-4b8c-b7a9-170e1a549f39",
+      "Biome": 1,
+      "Build": "1.13.1",
+      "BuildPlat": 7,
+      "Cheevos": false,
+      "ClientId": "0ceeb3a3-f96c-34b0-895f-b0d4ca7b129a",
+      "CurrentInput": 1,
+      "DeviceSessionId": "d5aa0631-644e-4b8c-b7a9-170e1a549f39",
+      "Dim": 0,
+      "DiscItemType": 508,
+      "GlobalMultiplayerCorrelationId": "4cef60cc-6df3-44ca-a0ff-54ccb52196f9",
+      "Mode": 1,
+      "MultiplayerCorrelationId": "630b1162-fe66-1207-76bc-31fde7e70b30",
+      "NetworkType": 0,
+      "Plat": "Win 10.0.18362.1",
+      "PlayerGameMode": 1,
+      "SchemaCommitHash": "19b6ec0744c3c83a00ecbd840f48cb080c7bc64d",
+      "ServerId": "raknet:9361912542503139509",
+      "Treatments": "mc-perf-plat-12-20:mc-perf-plat-1-20:mc-perf-plat-2-20:mc-perf-plat-4-20:mc-perf-plat-7-20:mc-perf-plat-13-20:mc-perf-plat-11-1:mc-rp-frozenbuttonandpanel:mc-rp-playfab",
+      "UserId": "2535451099196973",
+      "WorldFeature": 0,
+      "WorldSessionId": "a6a63892-6993-4e05-88b6-47fe6c11d11e",
+      "editionType": "win10",
+      "isTrial": 0,
+      "locale": "zh_CN",
+      "vrMode": false
+    }
+  },
+  "header": {
+    "messagePurpose": "event",
+    "requestId": "00000000-0000-0000-0000-000000000000",
+    "version": 1
+  }
+}
