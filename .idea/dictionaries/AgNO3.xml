@@ -2,6 +2,7 @@
   <dictionary name="AgNO3">
     <words>
       <w>biome</w>
+      <w>setblock</w>
       <w>targetname</w>
       <w>teleported</w>
     </words>
